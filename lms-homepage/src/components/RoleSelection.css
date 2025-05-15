@@ -1,0 +1,96 @@
+.role-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+    padding: 50px;
+    background: linear-gradient(135deg, #f0f8ff, #dbeeff); /* Lightened background */
+  }
+  
+  .role-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1600px; /* Increased max width for more spacing */
+  }
+  
+  .role-content {
+    flex: 1;
+    text-align: left;
+    max-width: 500px;
+    margin-right: 50px; /* Shifted text towards the right */
+  }
+  
+  .role-content h2 {
+    font-size: 34px;
+    font-weight: bold;
+    color: #2a3d66;
+    margin-bottom: 16px;
+  }
+  
+  .role-content p {
+    font-size: 18px;
+    color: #444;
+    line-height: 1.8;
+    margin-bottom: 25px;
+  }
+  
+  .role-buttons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* Stylish button design */
+  .role-btn {
+    background: linear-gradient(145deg, #6a11cb, #2575fc);
+    color: white;
+    padding: 14px 32px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Animated glowing effect */
+  .role-btn::before {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 10%, transparent 80%);
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .role-btn:hover::before {
+    top: 0;
+    left: 0;
+  }
+  
+  .role-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Image adjustments */
+  .role-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start; /* Shifted image fully to left */
+    margin-left: 50px; /* Slight padding from the left corner */
+  }
+  
+  .role-image img {
+    width: 450px; /* Slightly increased image size */
+    height: auto;
+    border-radius: 14px;
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.2);
+  }
+  

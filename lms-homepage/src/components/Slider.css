@@ -1,0 +1,81 @@
+.slider-container {
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    padding: 20px 0;
+    position: relative;
+  }
+  
+  /* Swiper Styles */
+  .swiper {
+    width: 100%;
+  }
+  
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  
+  /* Card Styling */
+  .card {
+    width: 420px; /* Equal card size */
+    height: 300px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .card-title {
+    margin: 5px 0;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  /* Glowing Pause Button */
+  .pause-icon {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 50px;
+    color: #ff4d4d;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .pause-icon:hover {
+    color: #ff1a1a;
+    transform: scale(1.2);
+  }
+  
+  /* Glowing Effect */
+  .glow-effect {
+    animation: glowing 1.5s infinite alternate;
+  }
+  
+  @keyframes glowing {
+    0% {
+      text-shadow: 0 0 5px #ff4d4d, 0 0 10px #ff1a1a;
+    }
+    100% {
+      text-shadow: 0 0 15px #ff6666, 0 0 20px #ff0000;
+    }
+  }
+  
